@@ -1,0 +1,57 @@
+:root {
+  --page-top: #9edcff;
+  --page-bottom: #fff7df;
+  --panel: rgba(255, 255, 255, 0.92);
+  --ink: #1d3250;
+  --body-text: #4f6b87;
+  --soft-text: #7992aa;
+  --line: #d3ebf5;
+  --line-strong: #b7d7ea;
+  --brand: #2d9fe2;
+  --brand-deep: #15659f;
+  --blue: #6cb0ff;
+  --blue-deep: #2363a9;
+  --mint: #7bdaa8;
+  --mint-deep: #23724c;
+  --gold: #ffb94a;
+  --gold-deep: #a66300;
+  --coral: #ff8979;
+  --coral-deep: #b84333;
+  --title-font:
+    "Trebuchet MS", "Arial Rounded MT Bold", "Verdana", sans-serif;
+  --ui-font:
+    "Trebuchet MS", "Verdana", "Geneva", sans-serif;
+
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, var(--page-top) 0 18%, #d9f2ff 18% 30%, var(--page-bottom) 64%, #fffdf6 100%);
+  font-family: var(--ui-font);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100svh;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
+    linear-gradient(180deg, var(--page-top) 0 18%, #d9f2ff 18% 30%, var(--page-bottom) 64%, #fffdf6 100%);
+}
+
+button,
+input {
+  letter-spacing: 0;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
