@@ -1,30 +1,33 @@
 :root {
-  --page-top: #9edcff;
-  --page-bottom: #fff7df;
-  --panel: rgba(255, 255, 255, 0.92);
-  --ink: #1d3250;
-  --body-text: #4f6b87;
-  --soft-text: #7992aa;
-  --line: #d3ebf5;
-  --line-strong: #b7d7ea;
-  --brand: #2d9fe2;
-  --brand-deep: #15659f;
-  --blue: #6cb0ff;
-  --blue-deep: #2363a9;
-  --mint: #7bdaa8;
-  --mint-deep: #23724c;
-  --gold: #ffb94a;
-  --gold-deep: #a66300;
-  --coral: #ff8979;
-  --coral-deep: #b84333;
+  --page-top: #39b9ff;
+  --page-mid: #c5efff;
+  --page-bottom: #fff2c7;
+  --panel: rgba(255, 255, 255, 0.94);
+  --ink: #143354;
+  --body-text: #43617d;
+  --soft-text: #7891a7;
+  --line: #c9e9f8;
+  --line-strong: #95cbe7;
+  --brand: #14a7df;
+  --brand-deep: #08659e;
+  --blue: #34a6f2;
+  --blue-deep: #125d9e;
+  --mint: #60d990;
+  --mint-deep: #18764b;
+  --gold: #ffc447;
+  --gold-deep: #a76100;
+  --coral: #ff725f;
+  --coral-deep: #b4362b;
+  --purple: #7b6dff;
   --title-font:
-    "Trebuchet MS", "Arial Rounded MT Bold", "Verdana", sans-serif;
+    "Arial Rounded MT Bold", "Hiragino Maru Gothic ProN", "Yu Gothic", "Trebuchet MS", sans-serif;
   --ui-font:
-    "Trebuchet MS", "Verdana", "Geneva", sans-serif;
+    "Yu Gothic", "Hiragino Kaku Gothic ProN", "Trebuchet MS", sans-serif;
 
   color: var(--ink);
   background:
-    linear-gradient(180deg, var(--page-top) 0 18%, #d9f2ff 18% 30%, var(--page-bottom) 64%, #fffdf6 100%);
+    radial-gradient(circle at 78% 8%, rgba(255, 255, 255, 0.86), transparent 17rem),
+    linear-gradient(180deg, var(--page-top) 0 16%, var(--page-mid) 34%, var(--page-bottom) 78%, #fffdf6 100%);
   font-family: var(--ui-font);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -41,8 +44,21 @@ body {
   min-height: 100svh;
   margin: 0;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0)),
-    linear-gradient(180deg, var(--page-top) 0 18%, #d9f2ff 18% 30%, var(--page-bottom) 64%, #fffdf6 100%);
+    radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.68), transparent 9rem),
+    radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.76), transparent 13rem),
+    linear-gradient(180deg, var(--page-top) 0 16%, var(--page-mid) 34%, var(--page-bottom) 78%, #fffdf6 100%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: auto 0 0;
+  height: 38svh;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 18% 100%, rgba(89, 181, 90, 0.25), transparent 34%),
+    radial-gradient(ellipse at 82% 100%, rgba(89, 181, 90, 0.22), transparent 36%),
+    linear-gradient(180deg, transparent, rgba(77, 169, 92, 0.14));
 }
 
 button,
